@@ -1,0 +1,27 @@
+.mt-navigator {
+  width: 100%;
+  overflow-x: hidden;
+}
+.mt-navigator-wrapper {
+  min-width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+.mt-navigator-wrapper-item {
+  position: relative;
+  flex: 0 0 0;
+}
+.mt-navigator-wrapper-item  .active {
+  font-weight: bold;
+}
+.mt-navigator-wrapper-item .active::after {
+  content: "";
+  position: absolute;
+  bottom: 0px;
+  left: 5px;
+  right: 5px;
+  height: 2px;
+  margin: 0 auto;
+  background: currentColor;
+  border-radius: 1px;
+}

@@ -1,0 +1,61 @@
+.mt-waterfall {
+  width: 100%;
+  box-sizing: border-box;
+  position: relative;
+}
+.mt-waterfall-wrapper-box {
+  width: 100%;
+  height: auto;
+  padding: 0;
+  margin: 0;
+}
+.mt-waterfall-mock-list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  line-height: 0;
+}
+.mt-waterfall-mock-list-item {
+  display: inline-block;
+  width: ~'calc(50% - 2.6667vw)';
+  padding-bottom: 1.3333vw;
+  margin: 2.6667vw 1.3333vw 0;
+  border: 4px;
+  background: #fff;
+}
+.mt-waterfall-mock-list-item-1 {
+  width: 100%;
+  height: 48vw;
+  border-radius: 4px 4px 0 0;
+  background-image: linear-gradient(to right,#f2f2f2 0%,rgba(230, 230, 230, 0.5) 10%,#f2f2f2 20%);
+  background-size: 200% 100%;
+  background-position: left top;
+  animation: mt-waterfall-bg-animate 3s linear infinite;
+}
+.mt-waterfall-mock-list-item-2,
+.mt-waterfall-mock-list-item-3,
+.mt-waterfall-mock-list-item-4 {
+  width: 80%;
+  height: 4.8vw;
+  border-radius: 2px;
+  margin: 1.3333vw 0 0 1.3333vw;
+  background-image: linear-gradient(to right,#e6e6e6 0%,rgba(217, 217, 217, 0.5) 10%,#e6e6e6 20%);
+  background-size: 200% 100%;
+  background-position: left top;
+  animation: mt-waterfall-bg-animate 3s linear infinite;
+}
+.mt-waterfall-mock-list-item-3 {
+  width: 30%;
+}
+.mt-waterfall-mock-list-item-4 {
+  width: 50%;
+}
+
+@keyframes mt-waterfall-bg-animate {
+  0% {
+    background-position: left top;
+  }
+  100% {
+    background-position: left -100% top;
+  }
+}

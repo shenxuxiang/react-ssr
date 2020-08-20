@@ -1,0 +1,44 @@
+html,
+body,
+main,
+div,
+ul,
+ol,
+li,
+dd,
+dt,
+p,
+h1, h2, h3, h4, h5, h6,
+span {
+  padding: 0;
+  margin: 0;
+}
+.ssr-main {
+  min-height: 100vh;
+  background: #f8f8f8;
+  padding-top: 40px;
+  box-sizing: border-box;
+}
+.ssr-navigator {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 40px;
+  background: skyblue;
+}
+.ssr-navigator {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.ssr-navigator-item {
+  width: 100px;
+  font-size: 16px;
+  color: #fff;
+  text-decoration: none;
+  text-align: center;
+}
+.ssr-navigator-item.active {
+  font-size: 18px;
+}

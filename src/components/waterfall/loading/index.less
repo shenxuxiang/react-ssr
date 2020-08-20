@@ -1,0 +1,34 @@
+.mt-waterfall-loading {
+  position: absolute;
+  top: 53.333vw;
+  left: 0;
+  right: 0;
+  width: 6vw;
+  height: 6vw;
+  margin: auto;
+}
+.mt-waterfall-loading-img {
+  width: 24px;
+  height: 24px;
+  background-image: url(./loading.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  animation: mt-waterfall-loading-rotate 1s linear infinite;
+}
+
+@-webkit-keyframes mt-waterfall-loading-rotate {
+  0 {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes mt-waterfall-loading-rotate {
+  0 {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
